@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char alpha;
+	char alpha, upper;
 
 	alpha = 'a';
 	while (alpha <= 'z')
@@ -14,7 +14,6 @@ int main(void)
 		putchar(alpha);
 		alpha++;
 	}
-	char upper;
 
 	upper = 'A';
 	while (upper <= 'Z')
