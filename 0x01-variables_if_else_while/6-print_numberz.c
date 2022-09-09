@@ -4,17 +4,16 @@
  *
  * Return: 0(Success)
  */
-void print_putchar(long value) 
-{
-		if (value != 0) 
-		{
-			print_putchar(value/10);
-			putchar((value % 10) + '0');
-		}
-}
 int main(void)
 {
-	long i = 012345678;
-	print_putchar(i);
-	return (0);
+	int i;
 
+	i = '0';
+	while (i <= '9')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
+}
