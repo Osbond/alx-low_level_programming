@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _islower - print 1 if its lowercase otherwise 0
  *@c: This is an integer
@@ -6,6 +6,7 @@
  *On error, 0(failure)
  */
 int _islower(int c);
+
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
