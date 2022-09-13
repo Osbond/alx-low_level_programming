@@ -2,6 +2,7 @@
 /**
  * print_sign - print the sign in front of a number
  *
+ * @n: An integer
  * Return: 1(success), 0(failure)
  */
 int print_sign(int n)
