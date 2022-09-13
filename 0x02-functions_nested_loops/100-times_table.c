@@ -31,7 +31,7 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar((multiply / 10) % 10 + '0')
+					_putchar((multiply / 10) % 10 + '0');
 					_putchar(multiply % 10 + '0');
 				}
 				else if (multiply > 99 && multiply < 1000)
