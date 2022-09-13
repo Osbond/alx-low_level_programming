@@ -5,6 +5,7 @@
  *Return: 1(Success)
  *On error, 0(failure)
  */
+int _islower(int c);
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
