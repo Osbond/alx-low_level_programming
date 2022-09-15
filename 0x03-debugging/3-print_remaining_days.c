@@ -5,7 +5,7 @@
 #define janDaysTot 31
 
 /**
- * print_remainig_days - takes a date and prints how many days
+ * print_remaining_days - takes a date and prints how many days
  * left in the year, taking leap years into account
  * @month: month in number format
  * @day: day of the month
