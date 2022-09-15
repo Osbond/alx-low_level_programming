@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_numbers - function that prints between 0-9 followed by new line
  *
@@ -18,17 +17,17 @@ void more_numbers(void)
 		{
 			if (j <= 9)
 			{
-				putchar(j % 10 + '0');
+				_putchar(j % 10 + '0');
 				j++;
 			}
 			else 
 			{
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
+				_putchar(j / 10 + '0');
+				_putchar(j % 10 + '0');
 			j++;
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 
