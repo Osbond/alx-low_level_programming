@@ -1,34 +1,18 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * prime_factor - function that prints the largest prime factor of n
- *
- * Return: void
- */
-void prime_factor(void)
-{
-	int i, n, flag, j;
 
-	i = 1;
-	n = 12231952;
-	flag = 0;
-	while (i < n)
+/**
+ * main - Entry point
+ * Return: Always 0
+ */
+int main(void)
+{
+	unsigned long int i = 3, n = 612852475143;
+
+	for (; i < 12057; i += 2)
 	{
-		if (n % i == 0)
-		{
-			j = 2;
-			while (j <= n/2)
-			{
-				if (n % j == 0)
-				{
-					flag = 1;
-					break;
-				}
-				j++;
-			}
-			if (flag == 0)
-				printf("%d", n);
-		}
-		i++;
+		while (n % i == 0 && n != i)
+			n /= i;
 	}
+	printf("%lu\n", n);
+	return (0);
 }
