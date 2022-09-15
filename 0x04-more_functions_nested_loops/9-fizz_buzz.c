@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * fizzbuzz - function that prints fizz-3 buzz-5 fizzbuzz-15
+ * fizz_buzz - function that prints fizz-3 buzz-5 fizzbuzz-15
  * Return: void
- i*/
+ */
 void fizz_buzz(void)
 {
 	int i;
@@ -16,8 +16,7 @@ void fizz_buzz(void)
 			printf("Fizz ");
 		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			
-			if ( i == 100)
+			if (i == 100)
 				printf("Buzz");
 			else
 				printf("Buzz ");
@@ -28,5 +27,5 @@ void fizz_buzz(void)
 			printf("%d ", i);
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
