@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_number - print number with putchar
  * @n: integer
  *
- * Return: Integger
+ * Return: Integer
  */
 void print_number(int n)
 {
