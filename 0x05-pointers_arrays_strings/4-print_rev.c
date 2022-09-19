@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_rev - Prints a string in reverse followed by new line
+ *
  * @s: string
  *
  * Return: void
@@ -19,3 +20,24 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
+
+/**
+ * _strlen - find the length of a string
+ * @s: string
+ *
+ * Return: Integer;
+ */
+int _strlen(char *s)
+{
+	int i, count;
+
+	i = 0;
+	count = 0;
+	while (s[i] != '\0')
+	{
+		count++;
+		i++;
+	}
+	return (count);
+}
+
