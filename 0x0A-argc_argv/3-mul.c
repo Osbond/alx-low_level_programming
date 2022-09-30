@@ -9,15 +9,7 @@
  * On error, any other integer
  */
 
-
-/**
- * putchar_digit_print - recursively prints with putchar
- * @a: Long
- *
- * Return: void
- */
-
-void putchar_digit_print(int a);
+int putchar_digit_print(int a);
 
 int main(int argc, char *argv[])
 {
@@ -48,13 +40,15 @@ int main(int argc, char *argv[])
  * putchar_digit_print - recursively prints with putchar
  * @a: Long
  *
- * Return: void
+ * Return: 0 on success
+ * On error: otheer no
  */
-void putchar_digit_print(int a)
+int putchar_digit_print(int a)
 {
 	if (a != 0)
 	{
 		putchar_digit_print(a / 10);
 		_putchar((a % 10) + '0');
 	}
+	return (0);
 }
