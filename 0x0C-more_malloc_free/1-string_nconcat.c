@@ -1,50 +1,35 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * string_nconcat - Function that concatenates two strings
- * @s1: string1
- * @s2: string 2
- * @n: integer
+ * string_nconcat - concatenate the first n bytes of a string to another
+ * @str1: pointer to the first string
+ * @str2: pointer to the second string
+ * @size: size of str2 to be concatenated
  *
- * Return: Character pointer on success
- * on error Null
+ * Return: pointer to the concatenated string
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *str1, char *str2, unsigned int size)
 {
-	int s1_length = 0, s2_length = 0, i, sum, k;
+	unsigned int len1, len2;
 	char *ptr;
-	unsigned int j, l;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	if (str1 == NULL)
+		str1 = "";
+	if (str2 == NULL)
+		str2 = "";
 
-	while (s1[s1_length] != '\0')
-		s1_length++;
-	while (s2[s2_length] != '\0')
-		s2_length++;
-	sum = s1_length + s2_length;
-	ptr = malloc(sizeof(*ptr) * sum);
-	i = 0;
-	while (i < s1_length)
-	{
-		ptr[i] = s1[i];
-		i++;
-	}
-	j = 0, k = i;
-	l = (unsigned int) s2_length;
-	if (n >= l)
-		n = s2_length;
-	while (j < n)
-	{
-		ptr[k] = s2[j];
-		j++;
-		k++;
-	}
-	ptr[sum] = '\0';
+	len1 = strlen(str1);
+	len2 = strlen(str2) <= size ? strlen(str2) : size;
+	ptr = malloc(len1 + len2 + 1);
 
 	if (ptr == NULL)
 		return (NULL);
+
+	strcpy(ptr, str1);
+	strncat(ptr, str2, size);
+
 	return (ptr);
 }
