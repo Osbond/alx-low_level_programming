@@ -14,7 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int s1_length = 0, s2_length = 0, i, sum, k;
 	char *ptr;
 	unsigned int j, l;
-	
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -43,8 +43,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k++;
 	}
 	ptr[sum] = '\0';
-	
-	if (!ptr)
+
+	if (ptr == NULL)
 		return (NULL);
 	return (ptr);
 }
