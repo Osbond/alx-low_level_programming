@@ -7,9 +7,3 @@
 3-main.c
 4-main.c
 4-sum.h
-a
-b
-c
-d
-e
-README.md
