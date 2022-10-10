@@ -6,7 +6,7 @@
  * @age: float
  * @owner: string
  *
- * Return: void
+ * Return: pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
