@@ -9,9 +9,9 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || f == NULL)
-		return;
 	void (*func_ptr)(char *) = f;
 
+	if (name == NULL || f == NULL)
+		return;
 	func_ptr(name);
 }
