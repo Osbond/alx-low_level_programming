@@ -1,11 +1,11 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 
 /**
- * op_add - adds two integer
- * @a: int
- * @b: int
+ * op_add - Add two numbers
+ * @a: The first number
+ * @b: The second number
  *
- * Return: integer
+ * Return: The sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -13,11 +13,11 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtracts two integer
- * @a: int
- * @b: int
+ * op_sub - Finds the difference of two numbers
+ * @a: The first number
+ * @b: The second number
  *
- * Return: integer
+ * Return: The diff of a and b
  */
 int op_sub(int a, int b)
 {
@@ -25,11 +25,11 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiplies two integer
- * @a: int
- * @b: int
+ * op_mul - Multiplies two numbers
+ * @a: The first number
+ * @b: The second number
  *
- * Return: integer
+ * Return: The product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -37,11 +37,11 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divides two integer
- * @a: int
- * @b: int
+ * op_div - Divides two numbers
+ * @a: The first number
+ * @b: The second number
  *
- * Return: integer
+ * Return: The quotient of a and b
  */
 int op_div(int a, int b)
 {
@@ -49,11 +49,11 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - finds the remainder of two integer
- * @a: int
- * @b: int
+ * op_mod - Finds the modulus of two numbers
+ * @a: The first number
+ * @b: The second number
  *
- * Return: integer
+ * Return: The modulus of a and b
  */
 int op_mod(int a, int b)
 {
