@@ -1,6 +1,9 @@
 0-main.c
 0-sum_them_all.c
+1-main.c
+1-print_numbers.c
 a
+b
 _putchar.c
 README.md
 variadic_functions.h
