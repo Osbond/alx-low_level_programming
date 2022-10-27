@@ -11,6 +11,8 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *ptr = malloc(sizeof(list_t));
 	int count = 0;
 
+	if (ptr == NULL)
+		return (NULL);
 	while (str[count] != '\0')
 		count++;
 	ptr->str = strdup(str);
